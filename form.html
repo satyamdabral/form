@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Form</title>
+    <style>
+        .form-container {
+            /* border: 1px solid black; */
+            padding: 20px;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+
+        <form>
+            <fieldset>
+                <legend>Personal</legend>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="middle-name">Middle Name:</label>
+                <input type="text" id="middle-name" name="middle-name">
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+                <br>
+                <br>
+                <label for="country">
+                    Course :
+                    <select id="options" name="course">
+                        <option value="course">Course</option>
+                        <option value="Bca">BCA</option>
+                        <option value="btech">B tech</option>
+                        <option value="bsc">BSC</option>
+                        <option value="mba">MBA</option>
+                        <option value="mtech">Mtech/option>
+
+                    </select>
+
+                </label>
+
+                <label>Gender:</label>
+                <label for="male">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    Male
+                </label>
+                <label for="female">
+                    <input type="radio" id="female" name="gender" value="female">
+                    Female
+                </label>
+                <label for="other">
+                    <input type="radio" id="other" name="gender" value="other">
+                    Other
+                </label>
+
+                <br>
+                <label for="birthdate">Date of Birth:
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </label>
+                <br>
+                <label for="phone">Phone:</label>
+                <input type="text" name="country code" value="+91" size="2" disabled>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" cols="80" rows="5" required></textarea>
+
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirm-password">Re-type Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <br>
+                <br>
+                <input type="checkbox" name="checkbox" id="checkbox">
+
+                Agree to terms and conditions
+                <br>
+                <br>
+
+                <label for="file">Choose File:
+                    <input type="file" id="file" name="file">
+                </label>
+
+
+                <label for="color">Choose Color:
+                    <input type="color" id="color" name="color">
+                </label>
+                <input type="submit" name="" id="" value="Reset">
+                <input type="submit" value="Submit">
+
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
